@@ -122,5 +122,5 @@ mynet = MyNetwork(config)
 mynet.load_model()
 
 # generate filtered matched. Note matches are not cv.KeyPoint objects but 2D points
-# example shape is filtered_matches[img_combinations[img1, img2[img2 2D point]], img1_name, img_2 name]
+# example shape is filtered_matches[img_combinations[kps1, kps2[2D point]], img1_name, img_2 name]
 filtered_matches = filter_matches(feature_matches, mynet, save=True)
